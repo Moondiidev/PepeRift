@@ -1,0 +1,125 @@
+.headsets {
+    background-color: $color-brown-dark-1;
+
+    &__container {
+        padding: 15rem 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 124rem;
+        @include media(phone){
+            margin-top: 1rem;
+            padding: 10rem 0;
+        }
+        &__upper {
+            display: flex;
+            justify-content: center;
+            @include media(phone){
+                flex-direction: column;
+            }
+        }
+
+        &--left {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            &__text {
+                font-size: 5rem;
+                line-height: 6.4rem;
+                margin-bottom: 12rem;
+                letter-spacing: -1px;
+            }
+            @include media(phone){
+                width: 92%;
+                margin: 0 auto;
+                &__text{
+                    font-size: 7rem;
+                    line-height: 8rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        &--right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            @include media(phone){
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 1rem;
+        height: 60rem;
+        margin: 1rem 0;
+        overflow: hidden;
+        padding-right: 2rem;
+    }
+
+    &__box {
+        height: 100%;
+        width: 100%;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            .headsets__box__img {
+                transform: scale(1.08);
+            }
+        }
+
+        &__img {
+            left: 0;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../../img/2.png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: ease-in-out 0.6s;
+
+
+            &--2 {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../../img/1.jpg") no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--3 {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../../img/3.png") no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 3rem;
+        }
+    }
+    &__more{
+        margin-top: 10rem;
+        text-align: center;
+        @include media(phone){
+            width: 92%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            .more{
+                display: block;
+                margin-top: 4rem;
+            }
+        }
+    }
+}

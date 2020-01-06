@@ -1,0 +1,35 @@
+.legal {
+    &__info {
+        margin-top: 2rem;
+        padding: 3rem 6rem;
+        border-top: 2px solid #DFDFDF;
+
+        @include media(phone) {
+            padding: 5rem 3rem;
+        }
+    }
+
+    &__option {
+        background-color: transparent;
+        color: black;
+        border: none;
+        padding: 0 3rem 0 0;
+        outline-offset: -1px;
+        background: url(../../img//updown.png) no-repeat;
+        background-position: right;
+        background-size: 4.2rem auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        text-align: left;
+        padding-right: 4.2rem;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        position: relative;
+        //Removes weird dotted line from firefox around text when focused
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+}

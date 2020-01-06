@@ -1,0 +1,75 @@
+.heading-primary {
+    font-size: 5.7rem;
+}
+
+.heading-secondary {
+    font-size: 2.8rem;
+    @include media(phone){
+        font-size: 1.8rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2.8rem;
+    line-height: 3rem;
+}
+
+.heading-4 {
+    font-size: 2.6rem;
+    color: black;
+    font-weight: 600;
+}
+.heading-5 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 500;
+}
+.heading-6 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    @include media(phone){
+        font-size: 1.8rem;
+    }
+}
+
+.paragraph {
+    color: #777879;
+    font-size: 1.8rem;
+    @include media(phone){
+        font-size: 2.2rem;
+    }
+    &--2 {
+        font-weight: 500;
+        color: #777879;
+    }
+    &--blue {
+        font-size: 2rem;
+        color: $color-blue;
+        font-weight: 600;
+        &--light{
+            font-weight: 400;
+        }
+    }
+    &--blue--2{
+        color:#538AFF;
+        font-weight: 600;
+    }
+    &--tiny{
+        color: #777879;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.paragraph--thick {
+    color: #999999;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.paragraph--white {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}

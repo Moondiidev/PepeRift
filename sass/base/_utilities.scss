@@ -1,0 +1,43 @@
+.u_padding_big{
+    padding-bottom: 9rem;
+}
+.u_padding_medium{
+    padding-bottom: 7rem;
+}
+.u_padding_small{
+    padding-bottom: 4rem;
+}
+.u_marginB_tiny{
+    margin: 1rem 0;
+}
+.u_margin_tiny{
+    margin-bottom: 1rem;
+}
+.u_margin_small{
+    margin-bottom: 2rem;
+}
+.u_margin_medium{
+    margin-bottom: 3rem;
+    @include media(tab-land) {
+        margin-bottom: 4rem;
+    }
+}
+.u_margin_big{
+    margin-bottom: 4rem;
+}
+.u_margin_large{
+    margin-bottom: 7rem;
+    @include media(phone) {
+        margin-bottom: 4rem;
+    }
+}
+.seperator{
+    border-width: 0; 
+    height: 1px;
+    display: block;
+    color: #dadde1;
+    background-color: #dadde1;
+}
+.legal-seperator{
+    margin: 2rem 0;
+}

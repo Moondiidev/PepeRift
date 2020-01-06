@@ -1,0 +1,21 @@
+.form{
+    &__submit{
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        padding: 1.25rem;
+        background: transparent;
+        border: none;
+        height: 100%;
+    }
+    &__icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: rgba(119, 120, 121,0.6);
+        &--white{
+            fill:white;
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.order{
+    margin: 0 7.2rem;
+    @include media(phone){
+        margin: 0;
+    }
+    &__container{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #E4E4E4;
+        margin: 4rem 0;
+        height: 35rem;
+        @include media(tab-port){
+            height: 300px;
+        }
+        @include media(phone){
+            flex-direction: column;
+            height: 100%;
+            margin: 2rem 0;
+        }
+    }
+    &__imgbox{
+        height: 100%;
+        text-align: end;
+        &__img{
+            height: 100%;
+        }
+        @include media(phone){
+            margin-top: 5rem;
+            &__img{
+                width: 100%; 
+            }
+        }
+    }
+    &__text{
+        margin-left: 6rem;
+        width: 40rem;
+        @include media(tab-land){
+           margin-left: 6rem;
+        }
+        @include media(phone){
+            margin-top: 5rem;
+            width: 95%;
+            margin-left: 0;
+        }
+    }
+    &__form{
+        margin-top: 2rem;
+        position: relative;
+        &__text{
+            outline: none;
+            color: #777879;
+            background: transparent;
+            font-size: 1.8rem;
+            padding: 1rem;
+            width: 100%;
+            border: 2.5px solid rgba(119, 120, 121, 0.6);
+            transition: 0.2s;
+            margin: 0;
+            &:focus{
+                border: 2.5px solid rgba(119, 120, 121, 1);
+            }
+        }
+    }
+}

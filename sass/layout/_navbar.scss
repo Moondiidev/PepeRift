@@ -1,0 +1,100 @@
+.navbar {
+    height: 60px;
+    background-color: $color-brown-dark-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+
+    &__logo {
+        width: auto;
+        height: 100%;
+        margin-top: 1rem;
+        margin-left: 5rem;
+
+        @include media(tab-land) {
+            margin-left: 2rem;
+        }
+    }
+
+    &__list {
+        margin-left: 3rem;
+        list-style: none;
+        display: flex;
+
+        &__link {
+            text-decoration: none;
+            padding: 0 2.4rem;
+            font-weight: $fontWeight-large;
+            line-height: 6rem;
+            transition: 0.2s;
+
+            &:hover {
+                color: $color-grey-dark;
+            }
+        }
+
+        @include media(tab-land) {
+            display: none;
+        }
+    }
+
+    &__login {
+        width: 16.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 100%;
+        &__iconbox{
+            @include media(tab-land) {
+                order: -1;
+            }
+        }
+        &__texticonbox{
+            @include media(tab-land) {
+                order: 1;
+                .mobile--menu{
+                    &{
+                        position: relative;
+                    }
+                    &,
+                    &::after,
+                    &::before{
+                        display: block;
+                        height: 2px;
+                        width: 2rem;
+                        background-color: white;
+                    }
+                    &::after
+                    {
+                        content: "";
+                        position: absolute;
+                        top: 0.8rem;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: -0.8rem;
+                    }
+                }
+            }
+        }
+        @include media(tab-land) {
+            width: 13rem;
+        }
+        &__text{
+            @include media(tab-land) {
+                display: none;
+            }
+        }
+        &__icon {
+            width: 2.4rem;
+            height: 6rem;
+            fill: white;
+        }
+        &__symbol {
+            padding: 0 1.5rem;
+            color: $color-grey-dark;
+        }
+    }
+}

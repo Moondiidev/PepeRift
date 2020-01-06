@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    font-size: 62.5%; // 16px default --> 10px = 1em//
+
+    @include media(big-desktop) {
+        font-size: 75%; // 12px
+    }
+
+    @include media(tab-land) {
+        font-size: 56.25%; // 9px
+    }
+
+    @include media(tab-port) {
+        font-size: 56.25%; // 9px
+    }
+
+    @include media(phone) {
+        font-size: 50%; // 8px
+    }
+}
+
+.desktop {
+    @include media(phone) {
+        display: none;
+    }
+}
+
+.tblandhide {
+    @include media(tab-land) {
+        display: none;
+    }
+}
+
+.tblandshow {
+    display: none;
+
+    @include media(tab-land) {
+        display: block;
+    }
+
+    @include media(phone) {
+        display: none;
+    }
+}
+
+.tbportshow {
+    display: none;
+
+    @include media(tab-port) {
+        display: block;
+    }
+}
+
+.tbport {
+    display: none;
+
+    @include media(tab-port) {
+        display: block;
+    }
+
+    @include media(phone) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @include media(phone) {
+        display: block;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $fontWeight-medium;
+    line-height: 1.6;
+    background-color: $color-grey-light;
+
+}
+
+::-webkit-selection {
+    background-color: rgb(58, 52, 52);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: rgb(58, 52, 52);
+    color: white;
+}
+
+::selection {
+    background-color: rgb(58, 52, 52);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
