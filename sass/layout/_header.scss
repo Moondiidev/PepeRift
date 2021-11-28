@@ -19,8 +19,8 @@
     }
 
     &__logo {
-        height: 8rem;
-        width: 28rem;
+        height: auto;
+        width: 14rem;
         margin: 0 auto;
 
         @include media(tab-land) {
@@ -29,7 +29,7 @@
     }
 
     &__title {
-        padding-top: 3.4rem;
+        padding-top: 1rem;
         max-width: 50rem;
         margin: 0 auto;
         text-align: center;
