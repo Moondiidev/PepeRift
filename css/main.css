@@ -467,14 +467,14 @@ a {
     position: absolute;
   }
   .showcase__box__mobile--1 {
-    background: url("../img/showcase-1.jpg") no-repeat;
+    background: url("img/showcase-1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
   }
   .showcase__box__mobile--2 {
-    background: url("../img/showcase-2.jpg") no-repeat;
+    background: url("img/showcase-2.jpg") no-repeat;
     background-size: cover;
     background-position: left bottom;
   }
@@ -559,7 +559,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../img/Colorful.jpg") no-repeat;
+  background: url("img/Colorful.jpg") no-repeat;
   background-size: cover;
   clip-path: polygon(100% 60%, 100% 100%, 70% 100%);
   -webkit-clip-path: polygon(100% 60%, 100% 100%, 70% 100%);
@@ -701,8 +701,8 @@ a {
   top: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/2.png") no-repeat;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/2.png") no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("img/2.png") no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("img/2.png") no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-transition: ease-in-out 0.6s;
@@ -710,15 +710,15 @@ a {
 }
 
 .headsets__box__img--2 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/1.jpg") no-repeat;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/1.jpg") no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("img/1.jpg") no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("img/1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .headsets__box__img--3 {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/3.png") no-repeat;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/3.png") no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("img/3.png") no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("img/3.png") no-repeat;
   background-size: cover;
 }
 
@@ -873,7 +873,7 @@ a {
 .experiences__image {
   height: 100%;
   width: 100%;
-  background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/pepehigh.png) no-repeat;
+  background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(img/pepehigh.png) no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-transition: ease-in-out 0.6s;
@@ -1009,7 +1009,7 @@ a {
   border: none;
   padding: 0 3rem 0 0;
   outline-offset: -1px;
-  background: url(../img//updown.png) no-repeat;
+  background: url(img//updown.png) no-repeat;
   background-position: right;
   background-size: 4.2rem auto;
   -webkit-appearance: none;
